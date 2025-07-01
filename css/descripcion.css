@@ -1,0 +1,191 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 0; 
+  margin: 0;
+  /* background-image: url(../img/img-lugares/Earth/earth.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left; */
+  background: #0a0a1a;
+  
+  color: #9e5100;
+
+}
+
+#fondo-estrellado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  display: block;
+  pointer-events: none; /* Para que no bloquee clics */
+}
+
+/* Sección de información del producto */
+.producto-info {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  box-shadow: 0 2px 4px #0000001a;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #0009;
+  backdrop-filter: blur(1.5px);
+  color: #9e5100;
+}
+
+
+.div-contenedor{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #0000;
+}
+.imagen-cr img {
+  max-width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.caract {
+  width: 100%;
+  margin: 10px 30px ;
+
+}
+
+.caract h2 {
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.caract ul {
+  list-style-type:none;
+  font-size: 1rem;
+}
+
+.caract li {
+  margin-bottom: 8px;
+  width: 90%;
+}
+@media screen and (min-width:800px) {
+  .producto-info{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0;
+  }
+  .div-contenedor{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .caract{
+    height: auto;
+    width: 50%;
+    border-left: 1px solid #bc6904;
+    padding-left: 20px;
+  }
+  .imagen-cr{
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+  }
+  .imagen-cr img{
+    object-fit: cover;
+    object-position: left;
+    border-radius: 0 0 0 0;
+    width: 900px;
+    height: 100%;
+  }
+
+}
+/* ----------------------Sección de precios -------------------*/
+.precios {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #0009;
+}
+
+.precios h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #853900;
+  color: #ffffff;
+}
+
+tr:hover {
+  background-color: #be5900;
+  color: #eee;
+}
+
+/* Sección de opiniones */
+.opinion {
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.opinion h2 {
+  color: #9e5100;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Sección de preguntas frecuentes */
+.qna {
+  background-color: #0008;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qna h2 {
+  color: #9e5100;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+dl {
+  margin-top: 10px;
+}
+
+dt {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+dd {
+  margin-bottom: 10px;
+}
+
+/* Estilos del pie de página */
+

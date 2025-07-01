@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a0a1a;
+    color: #fff;
+    overflow: hidden;
+}
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 1.5s infinite alternate;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.asteroid {
+    position: absolute;
+    opacity: 1;
+    animation: rotate 12s linear infinite;
+    overflow: hidden;
+    will-change: transform, clip-path;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.stars-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background: transparent;
+}
+.contact-container {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    max-width: 400px;
+    min-height: 90vh;
+    margin: auto;
+    margin-top: 10px;
+	background-color: #fd9c1520;
+	backdrop-filter: blur(15px);
+    border-radius: 18px;
+    box-shadow: 0 0 40px 10px #222a;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #fd9c15;
+}
+
+.contact-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    color: #fdd615;
+}
+
+.contact-container .contact-info p {
+    margin: 4px;
+    margin-left: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #181828aa;
+    border: 1px solid #3a3a5a;
+    border-radius: 8px;
+    padding: 0.8rem;
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    transition: border 0.2s;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #fffa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 1.5px solid #fd9c15;
+    background: #232345aa;
+}
+
+.contact-form button {
+    background: linear-gradient(90deg, #e2be6177 40%, #a1590077 100%);
+    color: #dfd8ce;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff990088;
+    transition: background 0.2s, color 0.2s;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(90deg, #e2be61dd 40%, #a15900dd 100%);
+    color: #fff;
+}
+
+.contact-info {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 0.3em 0;
+    color: #f99500;
+}
+
+.atras{
+    position: absolute;
+    z-index: 50;
+    color: #fd9c15;
+    text-decoration: none;
+    border: 1px solid #fd9c15;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f9950033;
+
+}

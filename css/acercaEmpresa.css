@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-image: url(../img/img-lugares/img/fondo.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffe066;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px #000a;
+    transition: color 0.5s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffe066;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #ffe066;
+    color: #1a2233;
+}
+
+section {
+    background-color: #555e;
+    margin: 30px auto;
+    padding: 30px 20px;
+    border-radius: 18px;
+    max-width: 550px;
+    box-shadow: 0 2px 16px #0003;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range-start: contain -20% ;
+    animation-range-end: contain 60%;
+}
+@keyframes aparecer {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    40%{
+        transform: scale(1);
+        opacity: 1;
+    }        
+}
+
+
+h2 {
+    color: #ffe066;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+ul {
+    padding-left: 20px;
+}
